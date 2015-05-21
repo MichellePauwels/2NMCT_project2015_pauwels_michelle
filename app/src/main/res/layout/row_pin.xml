@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Marker Name"
+        android:id="@+id/textViewMarkerName"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginStart="29dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Address"
+        android:textSize="10dp"
+        android:id="@+id/textViewMarkerAddress"
+        android:layout_below="@+id/textViewMarkerName"
+        android:layout_alignStart="@+id/textViewMarkerName"
+        android:layout_marginBottom="18dp"/>
+
+    <Button
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:text="Go"
+        android:textSize="9dp"
+        android:id="@+id/buttonGo"
+        android:layout_alignTop="@+id/textViewMarkerName"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="28dp"
+        android:layout_alignBottom="@+id/textViewMarkerAddress"/>
+
+    <Button
+        android:layout_width="60dp"
+        android:layout_height="20dp"
+        android:text="delete"
+        android:textSize="9dp"
+        android:id="@+id/buttonDelete"
+        android:layout_marginLeft="15px"
+        android:layout_marginRight="15px"
+        android:background="@color/material_red"
+        android:layout_below="@+id/textViewMarkerAddress"
+        android:layout_alignStart="@+id/buttonGo"
+        android:layout_alignEnd="@+id/buttonGo"
+        android:shadowColor="#FFFFFF"
+        android:layout_marginBottom="18dp"/>
+
+</RelativeLayout>

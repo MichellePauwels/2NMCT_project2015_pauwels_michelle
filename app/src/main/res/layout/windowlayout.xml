@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/windowBackground">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name Spot"
+        android:id="@+id/textViewNameSpot"
+        android:layout_marginTop="21dp"
+        android:layout_marginLeft="21dp"
+        android:layout_marginRight="21dp"
+        android:textSize="9dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="18dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="220dp"
+        android:textSize="9dp"
+        android:text="your spot name"
+        android:layout_marginRight="21dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewYourNameSpot"
+        android:layout_below="@+id/textViewNameSpot"
+        android:layout_alignStart="@+id/textViewNameSpot"
+        android:layout_marginTop="17dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Address"
+        android:layout_marginRight="21dp"
+        android:id="@+id/textViewAddress"
+        android:layout_marginTop="18dp"
+        android:textSize="9dp"
+        android:layout_below="@+id/textViewYourNameSpot"
+        android:layout_alignStart="@+id/textViewYourNameSpot"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="the default address"
+        android:layout_marginRight="21dp"
+        android:id="@+id/textViewAddressS"
+        android:textSize="9dp"
+        android:layout_below="@+id/textViewAddress"
+        android:layout_alignStart="@+id/textViewAddress"
+        android:layout_marginTop="17dp"/>
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:textSize="9dp"
+        android:text="EDIT"
+        android:id="@+id/buttonEditMarker"
+        android:layout_below="@+id/textViewAddressS"
+        android:layout_alignStart="@+id/textViewAddressS"
+        android:layout_marginTop="24dp"
+        android:layout_alignEnd="@+id/textViewYourNameSpot"/>
+</RelativeLayout>

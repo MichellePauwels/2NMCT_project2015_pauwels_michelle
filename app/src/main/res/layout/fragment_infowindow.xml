@@ -1,0 +1,81 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context="nmct.howest.be.desmad.InfoWindowFragment"
+             android:background="@color/windowBackground">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your spot name"
+        android:id="@+id/textViewSpotNameFrag"
+        android:textStyle="bold"
+        style="?android:attr/listSeparatorTextViewStyle"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginRight="30dp"
+        android:layout_alignParentEnd="true"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextSpotNameFrag"
+        android:layout_below="@+id/textViewSpotNameFrag"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="30dp"
+        android:layout_alignStart="@+id/textViewSpotNameFrag"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:selectAllOnFocus="true">
+        <requestFocus/>
+    </EditText>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Address"
+        android:id="@+id/textViewAddressFrag"
+        android:textStyle="bold"
+        style="?android:attr/listSeparatorTextViewStyle"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_marginTop="31dp"
+        android:layout_marginRight="30dp"
+        android:layout_below="@+id/editTextSpotNameFrag"
+        android:layout_alignStart="@+id/editTextSpotNameFrag"
+        android:layout_alignParentEnd="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="the sticking address"
+        android:id="@+id/textViewAddressFrag2"
+        android:layout_marginTop="23dp"
+        android:layout_marginRight="30dp"
+        android:layout_below="@+id/textViewAddressFrag"
+        android:layout_alignStart="@+id/textViewAddressFrag"/>
+
+    <Button
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:text="save"
+        android:id="@+id/buttonSaveFrag"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/textViewAddressFrag2"/>
+
+    <Button
+        android:layout_width="110dp"
+        android:layout_height="18dp"
+        android:layout_marginTop="19px"
+        android:layout_marginBottom="19px"
+        android:text="Delete"
+        android:id="@+id/buttonDeleteMarker2"
+        android:background="@color/material_red"
+        android:layout_alignTop="@+id/buttonSaveFrag"
+        android:layout_alignBottom="@+id/buttonSaveFrag"
+        android:layout_alignEnd="@+id/textViewAddressFrag"/>
+</RelativeLayout>
